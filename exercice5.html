@@ -9,15 +9,15 @@
   <p>Scannez ce QR code pour ouvrir le site, puis pointez la camera vers le meme QR code.</p>
 
   <div style="position: relative; display: inline-block;">
-    <img id="qrcode" src="" alt="QR code" style="width: 300px; height: 300px;">
+    <img id="qrcode" src="" alt="QR code" style="width: 340px; height: 340px;">
     <img src="marker/HIRO.jpg" alt="Hiro"
-         style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; background: white; border: 4px solid white;">
+         style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: white; border: 3px solid white;">
   </div>
 
   <script>
     const url = "https://strike1510.github.io/TP01_WEB/exercice3.html";
     document.getElementById('qrcode').src =
-      "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" + encodeURIComponent(url);
+      "https://api.qrserver.com/v1/create-qr-code/?size=340x340&ecc=H&data=" + encodeURIComponent(url);
   </script>
 </body>
 </html>
