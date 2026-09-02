@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TP01 - Exercice 5 - QR + Hiro</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding: 40px;">
+  <h1>Exercice 5 : QR code + marker Hiro</h1>
+  <p>Ce QR code redirige vers l'URL GitHub Pages du projet (à modifier ci-dessous une fois publié).</p>
+
+  <div id="qrcode-container" style="position: relative; display: inline-block;">
+    <img id="qrcode" src="" alt="QR code" style="width: 300px; height: 300px;">
+    <img src="marker/HIRO.jpg" alt="Hiro"
+         style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; background: white; border: 4px solid white;">
+  </div>
+
+  <p><strong>Instructions :</strong></p>
+  <ol style="text-align: left; max-width: 500px; margin: 0 auto;">
+    <li>Publiez le projet sur GitHub Pages.</li>
+    <li>Remplacez GITHUB_PAGES_URL ci-dessous par votre URL réelle.</li>
+    <li>Scannez le QR code avec l'appareil photo du téléphone → ça ouvre le site.</li>
+    <li>Une fois le site (exercice2.html ou exercice3.html) ouvert, pointez la caméra du navigateur vers ce même QR code → le marqueur Hiro au centre est détecté et la boîte AR apparaît.</li>
+  </ol>
+
+  <script>
+    const GITHUB_PAGES_URL = "https://VOTRE-USER.github.io/VOTRE-REPO/exercice3.html";
+    document.getElementById('qrcode').src =
+      "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" + encodeURIComponent(GITHUB_PAGES_URL);
+  </script>
+</body>
+</html>

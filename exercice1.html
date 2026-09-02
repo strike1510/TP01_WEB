@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TP01 - Exercice 1 - Scène 3D A-Frame</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene background="color: #ECECEC">
+
+    <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
+
+    <a-box position="-3 2 0" color="#FF3333" width="1.5" height="1.5" depth="1.5"></a-box>
+    <a-box position="0 2 -2" color="#3333FF" width="1.5" height="1.5" depth="1.5"></a-box>
+    <a-box position="3 2 1" color="#FFD700" width="1.5" height="1.5" depth="1.5"></a-box>
+
+    <a-entity position="15 10 15" look-at="0 0 0">
+      <a-camera></a-camera>
+    </a-entity>
+
+    <a-entity light="type: directional; intensity: 0.8" position="5 10 5"></a-entity>
+    <a-entity light="type: ambient; intensity: 0.5"></a-entity>
+
+  </a-scene>
+</body>
+</html>
